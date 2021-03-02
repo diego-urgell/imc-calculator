@@ -1,0 +1,147 @@
+
+*{
+    /*border: solid black 1px;*/
+    font-family: "Rubik";
+    font-size: calc(16px + 0.5vw);
+    /*overflow-x: hidden;*/
+    overflow-y:hidden;
+}
+
+html{
+    box-sizing: border-box;
+    padding: 2vw 10vw;
+}
+
+h1{
+    color: #68A143;
+    font-size: calc(35px + 0.5vw);
+}
+
+h4{
+    font-weight: normal;
+}
+
+form, section{
+    border-radius: 10px;
+    width: 80vw;
+}
+
+form{
+    background-color: #DBF0CD;
+    max-width:100%;
+}
+
+section{
+    height: 0;
+    max-height: 0;
+    max-width:100%;
+    box-sizing: border-box;
+    margin-top: 4vw;
+    background-color: #B1CBCE;
+    padding:0;
+
+}
+
+.active{
+    height:auto;
+    max-height:100%;
+    padding: 1% 5%;
+}
+
+label{
+    display: block;
+    margin-bottom: 5%;
+}
+
+form > div{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+}
+
+form > div div{
+    box-sizing:border-box;
+    width:50%;
+    padding: 3% 5%;
+}
+
+input{
+    box-sizing: border-box;
+    width: 100%;
+    height: 50%;
+    max-height: 50%;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0px 0px;
+    padding-left: 10%;
+    font-size: calc(12px + 0.5vw);
+    border:none;
+}
+
+input:focus{
+    border-color: #68A143;
+}
+
+#height-val{
+    background-image: url("height.png");
+}
+
+#weight-val{
+    background-image: url("scale.png");
+}
+
+button{
+    padding: 0.4vw 3vw;
+    margin: 1.5% 5% 2% 5%;
+    border-radius: 10px;
+    background-color: #68A143;
+    color: white;
+    border:none;
+}
+
+button:hover{
+    background-color: #79A0A5;
+    color: white;
+}
+
+#names{
+    margin: 3% 0 0 0;
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content:space-between;
+}
+
+#imc-bar{
+    overflow-y:visible;
+    width: 100%;
+    margin: 1% 0 5% 0;
+    border-radius: 10px;
+    height: calc(10px + 0.2vw);
+    background-color: white;
+}
+
+#needle-container{
+    overflow-y:visible;
+    display: flex;
+    height:100%;
+    flex-flow: row nowrap;
+    justify-content:flex-end;
+    width: 0%;
+    transition: width 5s;
+}
+
+#needle{
+    overflow-y:visible;
+    width: 1vw;
+    height: 200%;
+    border-bottom-left-radius:50px;
+    border-bottom-right-radius:50px;
+    background-color: #CC768C;
+    transition: 5s;
+}
+
+#alert{
+    display: none;
+}

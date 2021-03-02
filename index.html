@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="https://use.typekit.net/hrr3lor.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <h1> Calcula tu IMC </h1>
+
+    <form id="imc-data" onsubmit="return calculateIMC()">
+        <div>
+            <div>
+                <label for="height-val"> Cuál es tu estatura (m)? </label>
+                <input type="text" id="height-val" required>
+            </div>
+            <div>
+                <label for="weight-val"> Cuál es tu peso (kg)? </label>
+                <input type="text" id="weight-val" required>
+            </div>
+        </div>
+        <button type="submit" form="imc-data"> Calcular </button>
+    </form>
+
+    <section>
+        <h4 id="imc-num"> </h4>
+
+        <div id="names">
+            <span> 18.5 </span>
+            <span> 40 </span>
+        </div>
+
+        <div id="imc-bar">
+            <div id="needle-container">
+                <div id="needle"></div>
+            </div>
+        </div>
+
+        <h4 id="imc-cat"> </h4>
+    </section>
+
+    <h4 id="alert"> Los datos son incorrectos, intenta de nuevo! </h4>
+
+</body>
+</html>
